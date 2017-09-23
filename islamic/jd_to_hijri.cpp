@@ -1,5 +1,3 @@
-#include "widget.h"
-#include <QApplication>
 #include <QtCore>
 #include <QtDebug>
 
@@ -58,4 +56,6 @@ int main(int argc, char *argv[])
 
     QDate curDate = QDate().currentDate();
     qDebug() << jdToIslamic(gregToJd(curDate.month(), curDate.day(), curDate.year()));
+
+    return 0;
 }
